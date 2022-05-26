@@ -1,4 +1,4 @@
--- Nadir HUB
+-- Nadir Hub
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -6,7 +6,7 @@ local NadirHub = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
 local Enter = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local JoinDiscord = Instance.new("Textutton")
+local JoinDiscord = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local Key = Instance.new("TextBox")
 local UICorner_5 = Instance.new("UICorner")
@@ -82,7 +82,7 @@ JoinDiscord.MouseButton1Down:connect(function()
 	CoreGui:SetCore("SendNotification", {
 		Title = "Discord Link";
 		Text = "Copy To Clipboard";
-		Duration = 60;
+		Duration = 30;
 	})
 end)
 
@@ -122,7 +122,7 @@ UICorner_6.Parent = Close
 
 -- Scripts:
 
-local function AHWUDR_fake_script() -- Main.Drag 
+local function AVNYQF_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -160,8 +160,8 @@ local function AHWUDR_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(AHWUDR_fake_script)()
-local function DEQELO_fake_script() -- Close.Close Script 
+coroutine.wrap(AVNYQF_fake_script)()
+local function TVRN_fake_script() -- Close.Close Script 
 	local script = Instance.new('LocalScript', Close)
 
 	local Frame = script.Parent.Parent
@@ -170,4 +170,4 @@ local function DEQELO_fake_script() -- Close.Close Script
 		Frame.Visible = false
 	end)
 end
-coroutine.wrap(DEQELO_fake_script)()
+coroutine.wrap(TVRN_fake_script)()
