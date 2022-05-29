@@ -56,7 +56,7 @@ Enter.MouseButton1Down:connect(function()
 	if Key.Text == "UCkiaDRlGmrx" then
 		Main.Visible = false
 
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Loading/main/Loading2"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Loading/main/Loading..."))()
 	end
 end)
 
