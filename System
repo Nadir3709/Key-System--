@@ -53,7 +53,7 @@ Enter.TextSize = 14.000
 Enter.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 Enter.TextWrapped = true
 Enter.MouseButton1Down:connect(function()
-	if Key.Text == "QGFJQNJEW" then
+	if Key.Text == "QGFJQNJEWN" then
 		Main.Visible = false
 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Loading/main/Loading..."))()
