@@ -75,13 +75,13 @@ JoinDiscord.TextSize = 14.000
 JoinDiscord.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 JoinDiscord.TextWrapped = true
 JoinDiscord.MouseButton1Down:connect(function()
-	setclipboard("https://discord.gg/SuZYt36ybG")
+	setclipboard("https://discord.gg/3tj6sBP4JY")
 
 	local CoreGui = game:GetService("StarterGui")
 
 	CoreGui:SetCore("SendNotification", {
-		Title = "Discord Link";
-		Text = "Copy To Clipboard";
+		Title = "Discord";
+		Text = "Link Copy To Clipboard";
 		Duration = 30;
 	})
 end)
