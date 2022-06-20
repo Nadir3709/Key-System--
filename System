@@ -68,21 +68,21 @@ JoinDiscord.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 JoinDiscord.Position = UDim2.new(0.554987192, 0, 0.748936176, 0)
 JoinDiscord.Size = UDim2.new(0, 166, 0, 50)
 JoinDiscord.Font = Enum.Font.SourceSans
-JoinDiscord.Text = "Join Discord For Key (Click Me)"
+JoinDiscord.Text = "Copy Key Link (Click Me)"
 JoinDiscord.TextColor3 = Color3.fromRGB(255, 255, 255)
 JoinDiscord.TextScaled = true
 JoinDiscord.TextSize = 14.000
 JoinDiscord.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 JoinDiscord.TextWrapped = true
 JoinDiscord.MouseButton1Down:connect(function()
-	setclipboard("https://discord.gg/3tj6sBP4JY")
+	setclipboard("https://pastebin.com/raw/0Fe1Fa1W")
 
 	local CoreGui = game:GetService("StarterGui")
 
 	CoreGui:SetCore("SendNotification", {
-		Title = "Discord";
+		Title = "Key";
 		Text = "Link Copy To Clipboard";
-		Duration = 30;
+		Duration = 15;
 	})
 end)
 
