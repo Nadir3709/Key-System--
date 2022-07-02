@@ -1,1 +1,182 @@
- local o = Instance.new("\83\99\114\101\101\110\71\117\105") local t = Instance.new("\70\114\97\109\101") local c = Instance.new("\85\73\67\111\114\110\101\114") local a = Instance.new("\84\101\120\116\76\97\98\101\108") local h = Instance.new("\85\73\67\111\114\110\101\114") local b = Instance.new("\84\101\120\116\66\117\116\116\111\110") local c_3 = Instance.new("\85\73\67\111\114\110\101\114") local n = Instance.new("\84\101\120\116\66\117\116\116\111\110") local p = Instance.new("\85\73\67\111\114\110\101\114") local j = Instance.new("\84\101\120\116\66\111\120") local q = Instance.new("\85\73\67\111\114\110\101\114") local m = Instance.new("\84\101\120\116\66\117\116\116\111\110") local r = Instance.new("\85\73\67\111\114\110\101\114") o.Parent = game.CoreGui o.ZIndexBehavior = Enum.ZIndexBehavior.Sibling t.Name = "\77\97\105\110" t.Parent = o t.BackgroundColor3 = Color3.fromRGB(0, 0, 0) t.Position = UDim2.new(0.313986689, 0, 0.314960629, 0) t.Size = UDim2.new(0, 391, 0, 235) c.Parent = t a.Name = "\78\97\100\105\114\32\72\117\98" a.Parent = t a.BackgroundColor3 = Color3.fromRGB(36, 36, 36) a.Size = UDim2.new(0, 391, 0, 41) a.Font = Enum.Font.SourceSans a.Text = "\78\97\100\105\114\32\72\117\98\32\124\32\75\101\121\32\83\121\115\116\101\109" a.TextColor3 = Color3.fromRGB(255, 255, 255) a.TextScaled = true a.TextSize = 14.000 a.TextStrokeColor3 = Color3.fromRGB(255, 255, 255) a.TextWrapped = true h.Parent = a b.Name = "\69\110\116\101\114" b.Parent = t b.BackgroundColor3 = Color3.fromRGB(36, 36, 36) b.Position = UDim2.new(0.0179028139, 0, 0.748936176, 0) b.Size = UDim2.new(0, 166, 0, 50) b.Font = Enum.Font.SourceSans b.Text = "\69\110\116\101\114" b.TextColor3 = Color3.fromRGB(255, 255, 255) b.TextScaled = true b.TextSize = 14.000 b.TextStrokeColor3 = Color3.fromRGB(255, 255, 255) b.TextWrapped = true b.MouseButton1Down:connect(function() if j.Text == "\81\69\70\79\69\70\69\79\74\49\50\51\52\53\53\53\53\53" then t.Visible = false loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\78\97\100\105\114\51\55\48\57\47\76\111\97\100\105\110\103\47\109\97\105\110\47\76\111\97\100\105\110\103"))() end end) c_3.Parent = b n.Name = "\74\111\105\110\32\68\105\115\99\111\114\100" n.Parent = t n.BackgroundColor3 = Color3.fromRGB(36, 36, 36) n.Position = UDim2.new(0.554987192, 0, 0.748936176, 0) n.Size = UDim2.new(0, 166, 0, 50) n.Font = Enum.Font.SourceSans n.Text = "\67\111\112\121\32\75\101\121\32\76\105\110\107\32\40\67\108\105\99\107\32\77\101\41" n.TextColor3 = Color3.fromRGB(255, 255, 255) n.TextScaled = true n.TextSize = 14.000 n.TextStrokeColor3 = Color3.fromRGB(255, 255, 255) n.TextWrapped = true n.MouseButton1Down:connect(function() setclipboard("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\48\70\101\49\70\97\49\87") local _ = game:GetService("\83\116\97\114\116\101\114\71\117\105") _:SetCore("\83\101\110\100\78\111\116\105\102\105\99\97\116\105\111\110", { Title = "\75\101\121"; Text = "\76\105\110\107\32\67\111\112\121\32\84\111\32\67\108\105\112\98\111\97\114\100"; Duration = 15; }) end) p.Parent = n j.Name = "\75\101\121" j.Parent = t j.BackgroundColor3 = Color3.fromRGB(36, 36, 36) j.BorderColor3 = Color3.fromRGB(36, 36, 36) j.Position = UDim2.new(0.0179028139, 0, 0.361702114, 0) j.Size = UDim2.new(0, 376, 0, 50) j.Font = Enum.Font.SourceSans j.Text = "\75\101\121\32\72\101\114\101" j.TextColor3 = Color3.fromRGB(255, 255, 255) j.TextScaled = true j.TextSize = 14.000 j.TextStrokeColor3 = Color3.fromRGB(255, 255, 255) j.TextWrapped = true q.Parent = j m.Name = "\67\108\111\115\101" m.Parent = t m.BackgroundColor3 = Color3.fromRGB(0, 0, 0) m.BorderColor3 = Color3.fromRGB(0, 0, 0) m.Position = UDim2.new(0.94373399, 0, 0, 0) m.Size = UDim2.new(0, 22, 0, 22) m.Font = Enum.Font.SourceSans m.Text = "\88" m.TextColor3 = Color3.fromRGB(255, 0, 0) m.TextScaled = true m.TextSize = 14.000 m.TextStrokeColor3 = Color3.fromRGB(255, 0, 0) m.TextWrapped = true r.Parent = m local function s()  local ac = Instance.new('LocalScript', t) local fs = game:GetService('UserInputService') local e = ac.Parent local ie = nil local d = 0.25 local ld = nil local ol = nil local function f(l) local to = l.Position - ld local ct = UDim2.new(ol.X.Scale, ol.X.Offset + to.X, ol.Y.Scale, ol.Y.Offset + to.Y) game:GetService('TweenService'):Create(e, TweenInfo.new(d), {Position = ct}):Play() end e.InputBegan:Connect(function(l) if (l.UserInputType == Enum.UserInputType.MouseButton1 or l.UserInputType == Enum.UserInputType.Touch) then  ie = true ld = l.Position ol = e.Position l.Changed:Connect(function() if l.UserInputState == Enum.UserInputState.End then ie = false end end) end end) fs.InputChanged:Connect(function(l) if l.UserInputType == Enum.UserInputType.MouseMovement or l.UserInputType == Enum.UserInputType.Touch then if ie then f(l) end end end) end coroutine.wrap(s)() local function TVRN_fake_ac()  local ac = Instance.new('LocalScript', m) local ha = ac.Parent.Parent ac.Parent.MouseButton1Click:Connect(function() ha.Visible = false end) end coroutine.wrap(TVRN_fake_ac)()
+-- Nadir Hub
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local NadirHub = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Enter = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local JoinDiscord = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Key = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.Position = UDim2.new(0.313986689, 0, 0.314960629, 0)
+Main.Size = UDim2.new(0, 391, 0, 235)
+
+UICorner.Parent = Main
+
+NadirHub.Name = "Nadir Hub"
+NadirHub.Parent = Main
+NadirHub.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+NadirHub.Size = UDim2.new(0, 391, 0, 41)
+NadirHub.Font = Enum.Font.SourceSans
+NadirHub.Text = "Nadir Hub | Key System"
+NadirHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+NadirHub.TextScaled = true
+NadirHub.TextSize = 14.000
+NadirHub.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+NadirHub.TextWrapped = true
+
+UICorner_2.Parent = NadirHub
+
+Enter.Name = "Enter"
+Enter.Parent = Main
+Enter.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Enter.Position = UDim2.new(0.0179028139, 0, 0.748936176, 0)
+Enter.Size = UDim2.new(0, 166, 0, 50)
+Enter.Font = Enum.Font.SourceSans
+Enter.Text = "Enter"
+Enter.TextColor3 = Color3.fromRGB(255, 255, 255)
+Enter.TextScaled = true
+Enter.TextSize = 14.000
+Enter.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Enter.TextWrapped = true
+Enter.MouseButton1Down:connect(function()
+	if Key.Text == "SSHHEESSHHH" then
+		Main.Visible = false
+		else
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Nadir Hub";
+	Text = "Invalid Key!"
+	Icon = "http://www.roblox.com/asset/?id=9938555490";
+	Duration = 5;
+})
+
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Loading/main/Loading"))()
+	end
+end)
+
+UICorner_3.Parent = Enter
+
+JoinDiscord.Name = "Join Discord"
+JoinDiscord.Parent = Main
+JoinDiscord.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+JoinDiscord.Position = UDim2.new(0.554987192, 0, 0.748936176, 0)
+JoinDiscord.Size = UDim2.new(0, 166, 0, 50)
+JoinDiscord.Font = Enum.Font.SourceSans
+JoinDiscord.Text = "Copy Key Link (Click Me)"
+JoinDiscord.TextColor3 = Color3.fromRGB(255, 255, 255)
+JoinDiscord.TextScaled = true
+JoinDiscord.TextSize = 14.000
+JoinDiscord.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+JoinDiscord.TextWrapped = true
+JoinDiscord.MouseButton1Down:connect(function()
+	setclipboard("https://pastebin.com/raw/0Fe1Fa1W")
+
+	local CoreGui = game:GetService("StarterGui")
+
+	CoreGui:SetCore("SendNotification", {
+		Title = "Key";
+		Text = "Link Copy To Clipboard";
+		Duration = 15;
+	})
+end)
+
+UICorner_4.Parent = JoinDiscord
+
+Key.Name = "Key"
+Key.Parent = Main
+Key.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Key.BorderColor3 = Color3.fromRGB(36, 36, 36)
+Key.Position = UDim2.new(0.0179028139, 0, 0.361702114, 0)
+Key.Size = UDim2.new(0, 376, 0, 50)
+Key.Font = Enum.Font.SourceSans
+Key.Text = "Key Here"
+Key.TextColor3 = Color3.fromRGB(255, 255, 255)
+Key.TextScaled = true
+Key.TextSize = 14.000
+Key.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Key.TextWrapped = true
+
+UICorner_5.Parent = Key
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.Position = UDim2.new(0.94373399, 0, 0, 0)
+Close.Size = UDim2.new(0, 22, 0, 22)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextWrapped = true
+
+UICorner_6.Parent = Close
+
+-- Scripts:
+
+local function AVNYQF_fake_script() -- Main.Drag 
+	local script = Instance.new('LocalScript', Main)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(AVNYQF_fake_script)()
+local function TVRN_fake_script() -- Close.Close Script 
+	local script = Instance.new('LocalScript', Close)
+
+	local Frame = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+coroutine.wrap(TVRN_fake_script)()
