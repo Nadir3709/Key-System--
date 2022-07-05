@@ -1,17 +1,22 @@
--- Nadir Hub
+-- Nadir Hub Key System
+
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local NadirHub = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
-local Enter = Instance.new("TextButton")
+local Sumbit = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local JoinDiscord = Instance.new("TextButton")
+local KeyLink = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local Key = Instance.new("TextBox")
 local UICorner_5 = Instance.new("UICorner")
 local Close = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local IncorrectKey = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local CorrectKey = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
 
 --Properties:
 
@@ -21,7 +26,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Main.Name = "Main"
 Main.Parent = ScreenGui
 Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Main.Position = UDim2.new(0.313986689, 0, 0.314960629, 0)
+Main.Position = UDim2.new(0.377454728, 0, 0.321030438, 0)
 Main.Size = UDim2.new(0, 391, 0, 235)
 
 UICorner.Parent = Main
@@ -40,62 +45,59 @@ NadirHub.TextWrapped = true
 
 UICorner_2.Parent = NadirHub
 
-Enter.Name = "Enter"
-Enter.Parent = Main
-Enter.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-Enter.Position = UDim2.new(0.0179028139, 0, 0.748936176, 0)
-Enter.Size = UDim2.new(0, 166, 0, 50)
-Enter.Font = Enum.Font.SourceSans
-Enter.Text = "Enter"
-Enter.TextColor3 = Color3.fromRGB(255, 255, 255)
-Enter.TextScaled = true
-Enter.TextSize = 14.000
-Enter.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Enter.TextWrapped = true
-Enter.MouseButton1Down:connect(function()
-	if Key.Text == "SSHHEESSHHH" then
-		Main.Visible = false
-		else
-		local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-	Title = "Nadir Hub";
-	Text = "Invalid Key!"
-	Icon = "http://www.roblox.com/asset/?id=9938555490";
-	Duration = 5;
-})
-
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Loading/main/Loading"))()
+Sumbit.Name = "Sumbit"
+Sumbit.Parent = Main
+Sumbit.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Sumbit.Position = UDim2.new(0.0179028139, 0, 0.748936176, 0)
+Sumbit.Size = UDim2.new(0, 166, 0, 50)
+Sumbit.Font = Enum.Font.SourceSans
+Sumbit.Text = "Sumbit"
+Sumbit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sumbit.TextScaled = true
+Sumbit.TextSize = 14.000
+Sumbit.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Sumbit.TextWrapped = true
+Sumbit.MouseButton1Down:connect(function()
+	if Key.Text == "keysystemback" then
+        CorrectKey.Visible = true
+        wait(3)
+        Main.Visible = false
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Loading/main/Loading"))()
+    else
+        IncorrectKey.Visible = true
+        wait(5)
+        IncorrectKey.Visible = false
 	end
 end)
 
-UICorner_3.Parent = Enter
+UICorner_3.Parent = Sumbit
 
-JoinDiscord.Name = "Join Discord"
-JoinDiscord.Parent = Main
-JoinDiscord.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-JoinDiscord.Position = UDim2.new(0.554987192, 0, 0.748936176, 0)
-JoinDiscord.Size = UDim2.new(0, 166, 0, 50)
-JoinDiscord.Font = Enum.Font.SourceSans
-JoinDiscord.Text = "Copy Key Link (Click Me)"
-JoinDiscord.TextColor3 = Color3.fromRGB(255, 255, 255)
-JoinDiscord.TextScaled = true
-JoinDiscord.TextSize = 14.000
-JoinDiscord.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-JoinDiscord.TextWrapped = true
-JoinDiscord.MouseButton1Down:connect(function()
-	setclipboard("https://pastebin.com/raw/0Fe1Fa1W")
+KeyLink.Name = "Key Link"
+KeyLink.Parent = Main
+KeyLink.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+KeyLink.Position = UDim2.new(0.554987192, 0, 0.748936176, 0)
+KeyLink.Size = UDim2.new(0, 166, 0, 50)
+KeyLink.Font = Enum.Font.SourceSans
+KeyLink.Text = "Join Discord For Key (Click Me)"
+KeyLink.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyLink.TextScaled = true
+KeyLink.TextSize = 14.000
+KeyLink.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+KeyLink.TextWrapped = true
+KeyLink.MouseButton1Down:connect(function()
+    setclipboard("https://discord.gg/3tj6sBP4JY")
+    
+local CoreGui = game:GetService("StarterGui")
 
-	local CoreGui = game:GetService("StarterGui")
-
-	CoreGui:SetCore("SendNotification", {
-		Title = "Key";
-		Text = "Link Copy To Clipboard";
-		Duration = 15;
-	})
+CoreGui:SetCore("SendNotification", {
+	Title = "Discord";
+	Text = "Link Invite Copy To Clipboard"
+	Icon = "http://www.roblox.com/asset/?id=9938555490";
+	Duration = 15;
+})
 end)
 
-UICorner_4.Parent = JoinDiscord
+UICorner_4.Parent = KeyLink
 
 Key.Name = "Key"
 Key.Parent = Main
@@ -129,9 +131,43 @@ Close.TextWrapped = true
 
 UICorner_6.Parent = Close
 
+IncorrectKey.Name = "Incorrect Key"
+IncorrectKey.Parent = Main
+IncorrectKey.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+IncorrectKey.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IncorrectKey.Position = UDim2.new(0.242966756, 0, 0.608510613, 0)
+IncorrectKey.Size = UDim2.new(0, 200, 0, 26)
+IncorrectKey.Visible = false
+IncorrectKey.Font = Enum.Font.SourceSans
+IncorrectKey.Text = "Incorrect Key !"
+IncorrectKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+IncorrectKey.TextScaled = true
+IncorrectKey.TextSize = 14.000
+IncorrectKey.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+IncorrectKey.TextWrapped = true
+
+UICorner_7.Parent = IncorrectKey
+
+CorrectKey.Name = "Correct Key"
+CorrectKey.Parent = Main
+CorrectKey.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CorrectKey.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CorrectKey.Position = UDim2.new(0.242966756, 0, 0.608510613, 0)
+CorrectKey.Size = UDim2.new(0, 200, 0, 26)
+CorrectKey.Visible = false
+CorrectKey.Font = Enum.Font.SourceSans
+CorrectKey.Text = "Correct Key !"
+CorrectKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+CorrectKey.TextScaled = true
+CorrectKey.TextSize = 14.000
+CorrectKey.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+CorrectKey.TextWrapped = true
+
+UICorner_8.Parent = CorrectKey
+
 -- Scripts:
 
-local function AVNYQF_fake_script() -- Main.Drag 
+local function IIEJ_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -169,8 +205,8 @@ local function AVNYQF_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(AVNYQF_fake_script)()
-local function TVRN_fake_script() -- Close.Close Script 
+coroutine.wrap(IIEJ_fake_script)()
+local function WIUAWAW_fake_script() -- Close.Close Script 
 	local script = Instance.new('LocalScript', Close)
 
 	local Frame = script.Parent.Parent
@@ -179,4 +215,4 @@ local function TVRN_fake_script() -- Close.Close Script
 		Frame.Visible = false
 	end)
 end
-coroutine.wrap(TVRN_fake_script)()
+coroutine.wrap(WIUAWAW_fake_script)()
