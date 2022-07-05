@@ -20,7 +20,7 @@ local UICorner_8 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
@@ -57,18 +57,6 @@ Sumbit.TextScaled = true
 Sumbit.TextSize = 14.000
 Sumbit.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 Sumbit.TextWrapped = true
-Sumbit.MouseButton1Down:connect(function()
-	if Key.Text == "keysystemback" then
-        CorrectKey.Visible = true
-        wait(3)
-        Main.Visible = false
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Loading/main/Loading"))()
-    else
-        IncorrectKey.Visible = true
-        wait(5)
-        IncorrectKey.Visible = false
-	end
-end)
 
 UICorner_3.Parent = Sumbit
 
@@ -84,18 +72,6 @@ KeyLink.TextScaled = true
 KeyLink.TextSize = 14.000
 KeyLink.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 KeyLink.TextWrapped = true
-KeyLink.MouseButton1Down:connect(function()
-    setclipboard("https://discord.gg/3tj6sBP4JY")
-    
-local CoreGui = game:GetService("StarterGui")
-
-CoreGui:SetCore("SendNotification", {
-	Title = "Discord";
-	Text = "Link Invite Copy To Clipboard"
-	Icon = "http://www.roblox.com/asset/?id=9938555490";
-	Duration = 15;
-})
-end)
 
 UICorner_4.Parent = KeyLink
 
@@ -167,7 +143,7 @@ UICorner_8.Parent = CorrectKey
 
 -- Scripts:
 
-local function IIEJ_fake_script() -- Main.Drag 
+local function FBLYLXX_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -205,8 +181,24 @@ local function IIEJ_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(IIEJ_fake_script)()
-local function WIUAWAW_fake_script() -- Close.Close Script 
+coroutine.wrap(FBLYLXX_fake_script)()
+local function QLYYS_fake_script() -- KeyLink.LocalScript 
+	local script = Instance.new('LocalScript', KeyLink)
+
+	script.Parent.MouseButton1Click: Connect (function()
+		setclipboard("https://discord.gg/3tj6sBP4JY")
+	
+		local CoreGui = game:GetService("StarterGui")
+	
+		CoreGui:SetCore("SendNotification", {
+			Title = "Discord";
+			Text = "Link Invite Copy To Clipboard";
+			Duration = 15;
+		})
+	end)
+end
+coroutine.wrap(QLYYS_fake_script)()
+local function VHEFMT_fake_script() -- Close.Close Script 
 	local script = Instance.new('LocalScript', Close)
 
 	local Frame = script.Parent.Parent
@@ -215,4 +207,4 @@ local function WIUAWAW_fake_script() -- Close.Close Script
 		Frame.Visible = false
 	end)
 end
-coroutine.wrap(WIUAWAW_fake_script)()
+coroutine.wrap(VHEFMT_fake_script)()
